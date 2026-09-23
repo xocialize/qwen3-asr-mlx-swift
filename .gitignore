@@ -1,0 +1,8 @@
+.build/
+.swiftpm/
+*.xcodeproj
+.DS_Store
+# Local run logs and one-off automation (absolute paths into the dev machine's harness)
+*.log
+after_release.sh
+swift_latency.sh

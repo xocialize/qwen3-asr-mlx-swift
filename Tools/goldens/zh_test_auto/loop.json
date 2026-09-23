@@ -1,0 +1,677 @@
+{
+ "wav": "audio.wav",
+ "language": null,
+ "context": "",
+ "text": "之前有顾客自己带酒水也没加收钱或者不让喝。",
+ "detected_language": "Chinese",
+ "steps": [
+  {
+   "ids": [
+    11528,
+    2240,
+    151704
+   ],
+   "gen": "language None<asr_text>",
+   "prefix": "",
+   "audio_s": 0.32,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704
+   ],
+   "gen": "language None<asr_text>",
+   "prefix": "",
+   "audio_s": 0.48,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704
+   ],
+   "gen": "language None<asr_text>",
+   "prefix": "",
+   "audio_s": 0.64,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    91
+   ],
+   "gen": "language None<asr_text>|",
+   "prefix": "",
+   "audio_s": 0.8,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    91
+   ],
+   "gen": "language None<asr_text>|",
+   "prefix": "",
+   "audio_s": 0.96,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    91
+   ],
+   "gen": "language None<asr_text>|",
+   "prefix": "",
+   "audio_s": 1.12,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 1.28,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 1.44,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 1.6,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 1.76,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 1.92,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.08,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.24,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.4,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.56,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.72,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 2.88,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.04,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.2,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.36,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.52,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.68,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 3.84,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.0,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.16,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.32,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.48,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.64,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.8,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 4.96,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 5.12,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 5.28,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 5.44,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    2240,
+    151704,
+    101056
+   ],
+   "gen": "language None<asr_text>之前",
+   "prefix": "",
+   "audio_s": 5.6,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11528,
+    8453,
+    151704,
+    101056
+   ],
+   "gen": "language Chinese<asr_text>之前",
+   "prefix": "",
+   "audio_s": 5.76,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    101056,
+    18830,
+    104476,
+    99283
+   ],
+   "gen": "之前有顾客自己",
+   "prefix": "language Chinese<asr_text>",
+   "audio_s": 5.92,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99283,
+    99278,
+    99525,
+    52510
+   ],
+   "gen": "自己带酒水",
+   "prefix": "language Chinese<asr_text>之前有顾客",
+   "audio_s": 6.08,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    52510,
+    102362,
+    20929,
+    50009
+   ],
+   "gen": "水也没加收",
+   "prefix": "language Chinese<asr_text>之前有顾客自己带酒",
+   "audio_s": 6.24,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    50009,
+    99428,
+    100631,
+    108697
+   ],
+   "gen": "收钱或者不让",
+   "prefix": "language Chinese<asr_text>之前有顾客自己带酒水也没加",
+   "audio_s": 6.4,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    108697,
+    100399,
+    1773
+   ],
+   "gen": "不让喝。",
+   "prefix": "language Chinese<asr_text>之前有顾客自己带酒水也没加收钱或者",
+   "audio_s": 6.56,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "language Chinese<asr_text>之前有顾客自己带酒水也没加收钱或者不让喝",
+   "audio_s": 6.72,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "language Chinese<asr_text>之前有顾客自己带酒水也没加收钱或者不让喝",
+   "audio_s": 6.74,
+   "max_new_tokens": 4
+  }
+ ],
+ "chunks": [
+  {
+   "audio_end_s": 0.32,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.48,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.64,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.8,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.96,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.12,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.44,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.6,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.76,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.92,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.08,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.24,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.4,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.56,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.72,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.88,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.04,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.2,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.36,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.52,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.68,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.84,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.0,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.16,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.32,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.48,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.64,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.8,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.96,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.12,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.44,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.6,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.76,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.92,
+   "delta": "之前有顾客"
+  },
+  {
+   "audio_end_s": 6.08,
+   "delta": "自己带酒"
+  },
+  {
+   "audio_end_s": 6.24,
+   "delta": "水也没加"
+  },
+  {
+   "audio_end_s": 6.4,
+   "delta": "收钱或者"
+  },
+  {
+   "audio_end_s": 6.56,
+   "delta": "不让喝"
+  },
+  {
+   "audio_end_s": 6.72,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.74,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.74,
+   "delta": "。"
+  }
+ ]
+}

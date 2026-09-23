@@ -1,0 +1,9 @@
+{
+ "wav": "audio.wav",
+ "language": "Chinese",
+ "context": "",
+ "audio_tokens": 88,
+ "mel_frames": 674,
+ "gen_text": "之前有顾客自己带酒水，",
+ "model": "/Volumes/Satechi/Development/mlxengine-audio/WIP/r2t2-eval/_weights/Confucius4-R2T2-bf16"
+}

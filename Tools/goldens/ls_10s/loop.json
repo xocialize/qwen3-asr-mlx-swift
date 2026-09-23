@@ -1,0 +1,868 @@
+{
+ "wav": "audio.flac",
+ "language": "English",
+ "context": "",
+ "text": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its stones to turn.",
+ "detected_language": "English",
+ "steps": [
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.32,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.48,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.64,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    91
+   ],
+   "gen": "|",
+   "prefix": "",
+   "audio_s": 0.8,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    2132,
+    374,
+    91
+   ],
+   "gen": "It is|",
+   "prefix": "",
+   "audio_s": 0.96,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    374,
+    264
+   ],
+   "gen": " is a",
+   "prefix": "It",
+   "audio_s": 1.12,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    264,
+    91
+   ],
+   "gen": " a|",
+   "prefix": "It is",
+   "audio_s": 1.28,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    264,
+    94016
+   ],
+   "gen": " a glean",
+   "prefix": "It is",
+   "audio_s": 1.44,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    94016,
+    261
+   ],
+   "gen": " gleaner",
+   "prefix": "It is a",
+   "audio_s": 1.6,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    261,
+    91
+   ],
+   "gen": "er|",
+   "prefix": "It is a glean",
+   "audio_s": 1.76,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    261,
+    12678
+   ],
+   "gen": "er bringing",
+   "prefix": "It is a glean",
+   "audio_s": 1.92,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    12678,
+    91
+   ],
+   "gen": " bringing|",
+   "prefix": "It is a gleaner",
+   "audio_s": 2.08,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    12678,
+    1495
+   ],
+   "gen": " bringing down",
+   "prefix": "It is a gleaner",
+   "audio_s": 2.24,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1495,
+    1059
+   ],
+   "gen": " down her",
+   "prefix": "It is a gleaner bringing",
+   "audio_s": 2.4,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1059,
+    91
+   ],
+   "gen": " her|",
+   "prefix": "It is a gleaner bringing down",
+   "audio_s": 2.56,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1059,
+    91
+   ],
+   "gen": " her|",
+   "prefix": "It is a gleaner bringing down",
+   "audio_s": 2.72,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1059,
+    825,
+    91
+   ],
+   "gen": " her one|",
+   "prefix": "It is a gleaner bringing down",
+   "audio_s": 2.88,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    825,
+    1340
+   ],
+   "gen": " one she",
+   "prefix": "It is a gleaner bringing down her",
+   "audio_s": 3.04,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1340,
+    2577
+   ],
+   "gen": " sheaf",
+   "prefix": "It is a gleaner bringing down her one",
+   "audio_s": 3.2,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    2577,
+    315
+   ],
+   "gen": "af of",
+   "prefix": "It is a gleaner bringing down her one she",
+   "audio_s": 3.36,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    315,
+    91
+   ],
+   "gen": " of|",
+   "prefix": "It is a gleaner bringing down her one sheaf",
+   "audio_s": 3.52,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    315,
+    13776
+   ],
+   "gen": " of corn",
+   "prefix": "It is a gleaner bringing down her one sheaf",
+   "audio_s": 3.68,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13776,
+    311
+   ],
+   "gen": " corn to",
+   "prefix": "It is a gleaner bringing down her one sheaf of",
+   "audio_s": 3.84,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    311,
+    458
+   ],
+   "gen": " to an",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn",
+   "audio_s": 4.0,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    458,
+    91
+   ],
+   "gen": " an|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to",
+   "audio_s": 4.16,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    458,
+    2310
+   ],
+   "gen": " an old",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to",
+   "audio_s": 4.32,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    2310,
+    91
+   ],
+   "gen": " old|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an",
+   "audio_s": 4.48,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    2310,
+    3015
+   ],
+   "gen": " old water",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an",
+   "audio_s": 4.64,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    3015,
+    25013
+   ],
+   "gen": " watermill",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old",
+   "audio_s": 4.8,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    25013,
+    13
+   ],
+   "gen": "mill.",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old water",
+   "audio_s": 4.96,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill",
+   "audio_s": 5.12,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill",
+   "audio_s": 5.28,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill",
+   "audio_s": 5.44,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill",
+   "audio_s": 5.6,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    11,
+    5086
+   ],
+   "gen": ", itself",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill",
+   "audio_s": 5.76,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    5086,
+    91
+   ],
+   "gen": " itself|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill,",
+   "audio_s": 5.92,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    5086,
+    91
+   ],
+   "gen": " itself|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill,",
+   "audio_s": 6.08,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    5086,
+    91
+   ],
+   "gen": " itself|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill,",
+   "audio_s": 6.24,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    5086,
+    77243,
+    88
+   ],
+   "gen": " itself mossy",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill,",
+   "audio_s": 6.4,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    88,
+    323
+   ],
+   "gen": "y and",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself moss",
+   "audio_s": 6.56,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy",
+   "audio_s": 6.72,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    323,
+    8016
+   ],
+   "gen": " and rent",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy",
+   "audio_s": 6.88,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    8016,
+    13
+   ],
+   "gen": " rent.",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and",
+   "audio_s": 7.04,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 7.2,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 7.36,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 7.52,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    13,
+    91
+   ],
+   "gen": ".|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 7.68,
+   "max_new_tokens": 3
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 7.84,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    11,
+    79887
+   ],
+   "gen": ", scarcely",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent",
+   "audio_s": 8.0,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    79887,
+    91
+   ],
+   "gen": " scarcely|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent,",
+   "audio_s": 8.16,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    79887,
+    2952
+   ],
+   "gen": " scarcely able",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent,",
+   "audio_s": 8.32,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    2952,
+    311
+   ],
+   "gen": " able to",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely",
+   "audio_s": 8.48,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    311,
+    633
+   ],
+   "gen": " to get",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able",
+   "audio_s": 8.64,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    633,
+    1181
+   ],
+   "gen": " get its",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to",
+   "audio_s": 8.8,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1181,
+    91
+   ],
+   "gen": " its|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get",
+   "audio_s": 8.96,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    1181,
+    26210
+   ],
+   "gen": " its stones",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get",
+   "audio_s": 9.12,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    26210,
+    91
+   ],
+   "gen": " stones|",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its",
+   "audio_s": 9.28,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    26210,
+    311
+   ],
+   "gen": " stones to",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its",
+   "audio_s": 9.44,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    311,
+    2484
+   ],
+   "gen": " to turn",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its stones",
+   "audio_s": 9.6,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    2484,
+    13
+   ],
+   "gen": " turn.",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its stones to",
+   "audio_s": 9.76,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its stones to turn",
+   "audio_s": 9.92,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "prefix": "It is a gleaner bringing down her one sheaf of corn to an old watermill, itself mossy and rent, scarcely able to get its stones to turn",
+   "audio_s": 10.07,
+   "max_new_tokens": 4
+  }
+ ],
+ "chunks": [
+  {
+   "audio_end_s": 0.32,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.48,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.64,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.8,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.96,
+   "delta": "It"
+  },
+  {
+   "audio_end_s": 1.12,
+   "delta": " is"
+  },
+  {
+   "audio_end_s": 1.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.44,
+   "delta": " a"
+  },
+  {
+   "audio_end_s": 1.6,
+   "delta": " glean"
+  },
+  {
+   "audio_end_s": 1.76,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.92,
+   "delta": "er"
+  },
+  {
+   "audio_end_s": 2.08,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.24,
+   "delta": " bringing"
+  },
+  {
+   "audio_end_s": 2.4,
+   "delta": " down"
+  },
+  {
+   "audio_end_s": 2.56,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.72,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.88,
+   "delta": " her"
+  },
+  {
+   "audio_end_s": 3.04,
+   "delta": " one"
+  },
+  {
+   "audio_end_s": 3.2,
+   "delta": " she"
+  },
+  {
+   "audio_end_s": 3.36,
+   "delta": "af"
+  },
+  {
+   "audio_end_s": 3.52,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.68,
+   "delta": " of"
+  },
+  {
+   "audio_end_s": 3.84,
+   "delta": " corn"
+  },
+  {
+   "audio_end_s": 4.0,
+   "delta": " to"
+  },
+  {
+   "audio_end_s": 4.16,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.32,
+   "delta": " an"
+  },
+  {
+   "audio_end_s": 4.48,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.64,
+   "delta": " old"
+  },
+  {
+   "audio_end_s": 4.8,
+   "delta": " water"
+  },
+  {
+   "audio_end_s": 4.96,
+   "delta": "mill"
+  },
+  {
+   "audio_end_s": 5.12,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.44,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.6,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.76,
+   "delta": ","
+  },
+  {
+   "audio_end_s": 5.92,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.08,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.24,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.4,
+   "delta": " itself moss"
+  },
+  {
+   "audio_end_s": 6.56,
+   "delta": "y"
+  },
+  {
+   "audio_end_s": 6.72,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.88,
+   "delta": " and"
+  },
+  {
+   "audio_end_s": 7.04,
+   "delta": " rent"
+  },
+  {
+   "audio_end_s": 7.2,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.36,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.52,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.68,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.84,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 8.0,
+   "delta": ","
+  },
+  {
+   "audio_end_s": 8.16,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 8.32,
+   "delta": " scarcely"
+  },
+  {
+   "audio_end_s": 8.48,
+   "delta": " able"
+  },
+  {
+   "audio_end_s": 8.64,
+   "delta": " to"
+  },
+  {
+   "audio_end_s": 8.8,
+   "delta": " get"
+  },
+  {
+   "audio_end_s": 8.96,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 9.12,
+   "delta": " its"
+  },
+  {
+   "audio_end_s": 9.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 9.44,
+   "delta": " stones"
+  },
+  {
+   "audio_end_s": 9.6,
+   "delta": " to"
+  },
+  {
+   "audio_end_s": 9.76,
+   "delta": " turn"
+  },
+  {
+   "audio_end_s": 9.92,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 10.07,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 10.07,
+   "delta": "."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "wav": "audio.flac",
+ "language": "English",
+ "context": "",
+ "audio_tokens": 131,
+ "mel_frames": 1007,
+ "gen_text": "It is a gleaner bringing down her",
+ "model": "/Volumes/Satechi/Development/mlxengine-audio/WIP/r2t2-eval/_weights/Confucius4-R2T2-bf16"
+}

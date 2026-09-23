@@ -1,0 +1,1624 @@
+{
+ "wav": "audio.flac",
+ "language": "English",
+ "context": "",
+ "text": "As the chase drives away, Mary stands bewildered and perplexed on the doorstep. Her mind in a tumult of excitement in which hatred of the doctor, distrust and suspicion of her mother, disappointment, vexation and ill humour surge and swell among those delicate organisations on which the structure and development of the soul so closely depend, doing perhaps an irreparable injury",
+ "detected_language": "English",
+ "steps": [
+  {
+   "ids": [],
+   "gen": "",
+   "audio_s": 0.32
+  },
+  {
+   "ids": [
+    91
+   ],
+   "gen": "|",
+   "audio_s": 0.48
+  },
+  {
+   "ids": [
+    2121,
+    91
+   ],
+   "gen": "As|",
+   "audio_s": 0.64
+  },
+  {
+   "ids": [
+    2121,
+    279,
+    91
+   ],
+   "gen": "As the|",
+   "audio_s": 0.8
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 0.96
+  },
+  {
+   "ids": [
+    279,
+    32486
+   ],
+   "gen": " the chase",
+   "audio_s": 1.12
+  },
+  {
+   "ids": [
+    32486,
+    91
+   ],
+   "gen": " chase|",
+   "audio_s": 1.28
+  },
+  {
+   "ids": [
+    32486,
+    20118
+   ],
+   "gen": " chase drives",
+   "audio_s": 1.44
+  },
+  {
+   "ids": [
+    20118,
+    91
+   ],
+   "gen": " drives|",
+   "audio_s": 1.6
+  },
+  {
+   "ids": [
+    20118,
+    3123
+   ],
+   "gen": " drives away",
+   "audio_s": 1.76
+  },
+  {
+   "ids": [
+    3123
+   ],
+   "gen": " away",
+   "audio_s": 1.92
+  },
+  {
+   "ids": [
+    3123
+   ],
+   "gen": " away",
+   "audio_s": 2.08
+  },
+  {
+   "ids": [
+    3123
+   ],
+   "gen": " away",
+   "audio_s": 2.24
+  },
+  {
+   "ids": [
+    3123,
+    11
+   ],
+   "gen": " away,",
+   "audio_s": 2.4
+  },
+  {
+   "ids": [
+    11
+   ],
+   "gen": ",",
+   "audio_s": 2.56
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 2.72
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 2.88
+  },
+  {
+   "ids": [
+    11,
+    10244,
+    91
+   ],
+   "gen": ", Mary|",
+   "audio_s": 3.04
+  },
+  {
+   "ids": [
+    10244,
+    91
+   ],
+   "gen": " Mary|",
+   "audio_s": 3.2
+  },
+  {
+   "ids": [
+    10244,
+    91
+   ],
+   "gen": " Mary|",
+   "audio_s": 3.36
+  },
+  {
+   "ids": [
+    10244,
+    13352
+   ],
+   "gen": " Mary stands",
+   "audio_s": 3.52
+  },
+  {
+   "ids": [
+    13352,
+    91
+   ],
+   "gen": " stands|",
+   "audio_s": 3.68
+  },
+  {
+   "ids": [
+    13352,
+    91
+   ],
+   "gen": " stands|",
+   "audio_s": 3.84
+  },
+  {
+   "ids": [
+    13352,
+    91
+   ],
+   "gen": " stands|",
+   "audio_s": 4.0
+  },
+  {
+   "ids": [
+    13352,
+    98674,
+    12336
+   ],
+   "gen": " stands bewildered",
+   "audio_s": 4.16
+  },
+  {
+   "ids": [
+    12336
+   ],
+   "gen": "ered",
+   "audio_s": 4.32
+  },
+  {
+   "ids": [
+    12336,
+    91
+   ],
+   "gen": "ered|",
+   "audio_s": 4.48
+  },
+  {
+   "ids": [
+    12336,
+    323,
+    91
+   ],
+   "gen": "ered and|",
+   "audio_s": 4.64
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 4.8
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 4.96
+  },
+  {
+   "ids": [
+    323,
+    73152,
+    291
+   ],
+   "gen": " and perplexed",
+   "audio_s": 5.12
+  },
+  {
+   "ids": [
+    291,
+    13
+   ],
+   "gen": "ed.",
+   "audio_s": 5.28
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 5.44
+  },
+  {
+   "ids": [
+    91
+   ],
+   "gen": "|",
+   "audio_s": 5.6
+  },
+  {
+   "ids": [
+    389,
+    91
+   ],
+   "gen": " on|",
+   "audio_s": 5.76
+  },
+  {
+   "ids": [
+    389,
+    279,
+    91
+   ],
+   "gen": " on the|",
+   "audio_s": 5.92
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 6.08
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 6.24
+  },
+  {
+   "ids": [
+    279,
+    75877,
+    13
+   ],
+   "gen": " the doorstep.",
+   "audio_s": 6.4
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 6.56
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 6.72
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 6.88
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 7.04
+  },
+  {
+   "ids": [
+    13,
+    91
+   ],
+   "gen": ".|",
+   "audio_s": 7.2
+  },
+  {
+   "ids": [
+    13,
+    6252,
+    91
+   ],
+   "gen": ". Her|",
+   "audio_s": 7.36
+  },
+  {
+   "ids": [
+    6252,
+    91
+   ],
+   "gen": " Her|",
+   "audio_s": 7.52
+  },
+  {
+   "ids": [
+    6252,
+    91
+   ],
+   "gen": " Her|",
+   "audio_s": 7.68
+  },
+  {
+   "ids": [
+    6252,
+    91
+   ],
+   "gen": " Her|",
+   "audio_s": 7.84
+  },
+  {
+   "ids": [
+    6252,
+    3971
+   ],
+   "gen": " Her mind",
+   "audio_s": 8.0
+  },
+  {
+   "ids": [
+    3971,
+    91
+   ],
+   "gen": " mind|",
+   "audio_s": 8.16
+  },
+  {
+   "ids": [
+    3971,
+    91
+   ],
+   "gen": " mind|",
+   "audio_s": 8.32
+  },
+  {
+   "ids": [
+    3971,
+    304,
+    91
+   ],
+   "gen": " mind in|",
+   "audio_s": 8.48
+  },
+  {
+   "ids": [
+    304,
+    264
+   ],
+   "gen": " in a",
+   "audio_s": 8.64
+  },
+  {
+   "ids": [
+    264,
+    91
+   ],
+   "gen": " a|",
+   "audio_s": 8.8
+  },
+  {
+   "ids": [
+    264,
+    84577
+   ],
+   "gen": " a tumult",
+   "audio_s": 8.96
+  },
+  {
+   "ids": [
+    84577
+   ],
+   "gen": " tumult",
+   "audio_s": 9.12
+  },
+  {
+   "ids": [
+    84577
+   ],
+   "gen": " tumult",
+   "audio_s": 9.28
+  },
+  {
+   "ids": [
+    84577,
+    91
+   ],
+   "gen": " tumult|",
+   "audio_s": 9.44
+  },
+  {
+   "ids": [
+    84577,
+    315,
+    91
+   ],
+   "gen": " tumult of|",
+   "audio_s": 9.6
+  },
+  {
+   "ids": [
+    315,
+    91
+   ],
+   "gen": " of|",
+   "audio_s": 9.76
+  },
+  {
+   "ids": [
+    315,
+    91
+   ],
+   "gen": " of|",
+   "audio_s": 9.92
+  },
+  {
+   "ids": [
+    315,
+    27262
+   ],
+   "gen": " of excitement",
+   "audio_s": 10.08
+  },
+  {
+   "ids": [
+    27262
+   ],
+   "gen": " excitement",
+   "audio_s": 10.24
+  },
+  {
+   "ids": [
+    27262
+   ],
+   "gen": " excitement",
+   "audio_s": 10.4
+  },
+  {
+   "ids": [
+    27262,
+    91
+   ],
+   "gen": " excitement|",
+   "audio_s": 10.56
+  },
+  {
+   "ids": [
+    27262,
+    91
+   ],
+   "gen": " excitement|",
+   "audio_s": 10.72
+  },
+  {
+   "ids": [
+    27262,
+    304,
+    91
+   ],
+   "gen": " excitement in|",
+   "audio_s": 10.88
+  },
+  {
+   "ids": [
+    304,
+    892
+   ],
+   "gen": " in which",
+   "audio_s": 11.04
+  },
+  {
+   "ids": [
+    892,
+    91
+   ],
+   "gen": " which|",
+   "audio_s": 11.2
+  },
+  {
+   "ids": [
+    892,
+    91
+   ],
+   "gen": " which|",
+   "audio_s": 11.36
+  },
+  {
+   "ids": [
+    892,
+    34142
+   ],
+   "gen": " which hatred",
+   "audio_s": 11.52
+  },
+  {
+   "ids": [
+    34142,
+    91
+   ],
+   "gen": " hatred|",
+   "audio_s": 11.68
+  },
+  {
+   "ids": [
+    34142,
+    315
+   ],
+   "gen": " hatred of",
+   "audio_s": 11.84
+  },
+  {
+   "ids": [
+    315,
+    279
+   ],
+   "gen": " of the",
+   "audio_s": 12.0
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 12.16
+  },
+  {
+   "ids": [
+    279,
+    10668
+   ],
+   "gen": " the doctor",
+   "audio_s": 12.32
+  },
+  {
+   "ids": [
+    10668
+   ],
+   "gen": " doctor",
+   "audio_s": 12.48
+  },
+  {
+   "ids": [
+    10668
+   ],
+   "gen": " doctor",
+   "audio_s": 12.64
+  },
+  {
+   "ids": [
+    10668
+   ],
+   "gen": " doctor",
+   "audio_s": 12.8
+  },
+  {
+   "ids": [
+    10668,
+    91
+   ],
+   "gen": " doctor|",
+   "audio_s": 12.96
+  },
+  {
+   "ids": [
+    10668,
+    91
+   ],
+   "gen": " doctor|",
+   "audio_s": 13.12
+  },
+  {
+   "ids": [
+    10668,
+    11,
+    91
+   ],
+   "gen": " doctor,|",
+   "audio_s": 13.28
+  },
+  {
+   "ids": [
+    11,
+    75986
+   ],
+   "gen": ", distrust",
+   "audio_s": 13.44
+  },
+  {
+   "ids": [
+    75986
+   ],
+   "gen": " distrust",
+   "audio_s": 13.6
+  },
+  {
+   "ids": [
+    75986,
+    91
+   ],
+   "gen": " distrust|",
+   "audio_s": 13.76
+  },
+  {
+   "ids": [
+    75986,
+    323,
+    91
+   ],
+   "gen": " distrust and|",
+   "audio_s": 13.92
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 14.08
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 14.24
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 14.4
+  },
+  {
+   "ids": [
+    323,
+    37041
+   ],
+   "gen": " and suspicion",
+   "audio_s": 14.56
+  },
+  {
+   "ids": [
+    37041,
+    91
+   ],
+   "gen": " suspicion|",
+   "audio_s": 14.72
+  },
+  {
+   "ids": [
+    37041,
+    315
+   ],
+   "gen": " suspicion of",
+   "audio_s": 14.88
+  },
+  {
+   "ids": [
+    315,
+    1059
+   ],
+   "gen": " of her",
+   "audio_s": 15.04
+  },
+  {
+   "ids": [
+    1059,
+    91
+   ],
+   "gen": " her|",
+   "audio_s": 15.2
+  },
+  {
+   "ids": [
+    1059,
+    6554
+   ],
+   "gen": " her mother",
+   "audio_s": 15.36
+  },
+  {
+   "ids": [
+    6554
+   ],
+   "gen": " mother",
+   "audio_s": 15.52
+  },
+  {
+   "ids": [
+    6554,
+    11
+   ],
+   "gen": " mother,",
+   "audio_s": 15.68
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 15.84
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 16.0
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 8.16
+  },
+  {
+   "ids": [
+    11,
+    40598
+   ],
+   "gen": ", disappointment",
+   "audio_s": 8.32
+  },
+  {
+   "ids": [
+    40598
+   ],
+   "gen": " disappointment",
+   "audio_s": 8.48
+  },
+  {
+   "ids": [
+    40598
+   ],
+   "gen": " disappointment",
+   "audio_s": 8.64
+  },
+  {
+   "ids": [
+    40598,
+    11,
+    91
+   ],
+   "gen": " disappointment,|",
+   "audio_s": 8.8
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 8.96
+  },
+  {
+   "ids": [
+    11,
+    91
+   ],
+   "gen": ",|",
+   "audio_s": 9.12
+  },
+  {
+   "ids": [
+    11,
+    83165,
+    367
+   ],
+   "gen": ", vexation",
+   "audio_s": 9.28
+  },
+  {
+   "ids": [
+    367
+   ],
+   "gen": "ation",
+   "audio_s": 9.44
+  },
+  {
+   "ids": [
+    367
+   ],
+   "gen": "ation",
+   "audio_s": 9.6
+  },
+  {
+   "ids": [
+    367
+   ],
+   "gen": "ation",
+   "audio_s": 9.76
+  },
+  {
+   "ids": [
+    367,
+    91
+   ],
+   "gen": "ation|",
+   "audio_s": 9.92
+  },
+  {
+   "ids": [
+    367,
+    323
+   ],
+   "gen": "ation and",
+   "audio_s": 10.08
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 10.24
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 10.4
+  },
+  {
+   "ids": [
+    323,
+    5862,
+    91
+   ],
+   "gen": " and ill|",
+   "audio_s": 10.56
+  },
+  {
+   "ids": [
+    5862,
+    91
+   ],
+   "gen": " ill|",
+   "audio_s": 10.72
+  },
+  {
+   "ids": [
+    5862,
+    57369
+   ],
+   "gen": " ill humour",
+   "audio_s": 10.88
+  },
+  {
+   "ids": [
+    57369
+   ],
+   "gen": " humour",
+   "audio_s": 11.04
+  },
+  {
+   "ids": [
+    57369,
+    91
+   ],
+   "gen": " humour|",
+   "audio_s": 11.2
+  },
+  {
+   "ids": [
+    57369,
+    91
+   ],
+   "gen": " humour|",
+   "audio_s": 11.36
+  },
+  {
+   "ids": [
+    57369,
+    91
+   ],
+   "gen": " humour|",
+   "audio_s": 11.52
+  },
+  {
+   "ids": [
+    57369,
+    21781
+   ],
+   "gen": " humour surge",
+   "audio_s": 11.68
+  },
+  {
+   "ids": [
+    21781,
+    91
+   ],
+   "gen": " surge|",
+   "audio_s": 11.84
+  },
+  {
+   "ids": [
+    21781,
+    91
+   ],
+   "gen": " surge|",
+   "audio_s": 12.0
+  },
+  {
+   "ids": [
+    21781,
+    323,
+    91
+   ],
+   "gen": " surge and|",
+   "audio_s": 12.16
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 12.32
+  },
+  {
+   "ids": [
+    323,
+    77253
+   ],
+   "gen": " and swell",
+   "audio_s": 12.48
+  },
+  {
+   "ids": [
+    77253
+   ],
+   "gen": " swell",
+   "audio_s": 12.64
+  },
+  {
+   "ids": [
+    77253
+   ],
+   "gen": " swell",
+   "audio_s": 12.8
+  },
+  {
+   "ids": [
+    77253
+   ],
+   "gen": " swell",
+   "audio_s": 12.96
+  },
+  {
+   "ids": [
+    77253
+   ],
+   "gen": " swell",
+   "audio_s": 13.12
+  },
+  {
+   "ids": [
+    77253,
+    91
+   ],
+   "gen": " swell|",
+   "audio_s": 13.28
+  },
+  {
+   "ids": [
+    77253,
+    4221
+   ],
+   "gen": " swell among",
+   "audio_s": 13.44
+  },
+  {
+   "ids": [
+    4221,
+    91
+   ],
+   "gen": " among|",
+   "audio_s": 13.6
+  },
+  {
+   "ids": [
+    4221,
+    1846
+   ],
+   "gen": " among those",
+   "audio_s": 13.76
+  },
+  {
+   "ids": [
+    1846,
+    91
+   ],
+   "gen": " those|",
+   "audio_s": 13.92
+  },
+  {
+   "ids": [
+    1846,
+    91
+   ],
+   "gen": " those|",
+   "audio_s": 14.08
+  },
+  {
+   "ids": [
+    1846,
+    91
+   ],
+   "gen": " those|",
+   "audio_s": 14.24
+  },
+  {
+   "ids": [
+    1846,
+    35201,
+    91
+   ],
+   "gen": " those delicate|",
+   "audio_s": 14.4
+  },
+  {
+   "ids": [
+    35201,
+    91
+   ],
+   "gen": " delicate|",
+   "audio_s": 14.56
+  },
+  {
+   "ids": [
+    35201,
+    91
+   ],
+   "gen": " delicate|",
+   "audio_s": 14.72
+  },
+  {
+   "ids": [
+    35201,
+    91
+   ],
+   "gen": " delicate|",
+   "audio_s": 14.88
+  },
+  {
+   "ids": [
+    35201,
+    91
+   ],
+   "gen": " delicate|",
+   "audio_s": 15.04
+  },
+  {
+   "ids": [
+    35201
+   ],
+   "gen": " delicate",
+   "audio_s": 15.2
+  },
+  {
+   "ids": [
+    35201,
+    28433
+   ],
+   "gen": " delicate organisations",
+   "audio_s": 15.36
+  },
+  {
+   "ids": [
+    28433
+   ],
+   "gen": " organisations",
+   "audio_s": 15.52
+  },
+  {
+   "ids": [
+    28433
+   ],
+   "gen": " organisations",
+   "audio_s": 15.68
+  },
+  {
+   "ids": [
+    28433
+   ],
+   "gen": " organisations",
+   "audio_s": 15.84
+  },
+  {
+   "ids": [
+    28433,
+    11,
+    91
+   ],
+   "gen": " organisations,|",
+   "audio_s": 16.0
+  },
+  {
+   "ids": [
+    389,
+    91
+   ],
+   "gen": " on|",
+   "audio_s": 8.16
+  },
+  {
+   "ids": [
+    389,
+    892
+   ],
+   "gen": " on which",
+   "audio_s": 8.32
+  },
+  {
+   "ids": [
+    892,
+    91
+   ],
+   "gen": " which|",
+   "audio_s": 8.48
+  },
+  {
+   "ids": [
+    892,
+    279
+   ],
+   "gen": " which the",
+   "audio_s": 8.64
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 8.8
+  },
+  {
+   "ids": [
+    279,
+    5944
+   ],
+   "gen": " the structure",
+   "audio_s": 8.96
+  },
+  {
+   "ids": [
+    5944
+   ],
+   "gen": " structure",
+   "audio_s": 9.12
+  },
+  {
+   "ids": [
+    5944
+   ],
+   "gen": " structure",
+   "audio_s": 9.28
+  },
+  {
+   "ids": [
+    5944
+   ],
+   "gen": " structure",
+   "audio_s": 9.44
+  },
+  {
+   "ids": [
+    5944,
+    91
+   ],
+   "gen": " structure|",
+   "audio_s": 9.6
+  },
+  {
+   "ids": [
+    5944,
+    323,
+    91
+   ],
+   "gen": " structure and|",
+   "audio_s": 9.76
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 9.92
+  },
+  {
+   "ids": [
+    323,
+    91
+   ],
+   "gen": " and|",
+   "audio_s": 10.08
+  },
+  {
+   "ids": [
+    323,
+    4401
+   ],
+   "gen": " and development",
+   "audio_s": 10.24
+  },
+  {
+   "ids": [
+    4401
+   ],
+   "gen": " development",
+   "audio_s": 10.4
+  },
+  {
+   "ids": [
+    4401
+   ],
+   "gen": " development",
+   "audio_s": 10.56
+  },
+  {
+   "ids": [
+    4401,
+    91
+   ],
+   "gen": " development|",
+   "audio_s": 10.72
+  },
+  {
+   "ids": [
+    4401,
+    91
+   ],
+   "gen": " development|",
+   "audio_s": 10.88
+  },
+  {
+   "ids": [
+    4401,
+    315,
+    279,
+    91
+   ],
+   "gen": " development of the|",
+   "audio_s": 11.04
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 11.2
+  },
+  {
+   "ids": [
+    279,
+    91
+   ],
+   "gen": " the|",
+   "audio_s": 11.36
+  },
+  {
+   "ids": [
+    279,
+    13527
+   ],
+   "gen": " the soul",
+   "audio_s": 11.52
+  },
+  {
+   "ids": [
+    13527
+   ],
+   "gen": " soul",
+   "audio_s": 11.68
+  },
+  {
+   "ids": [
+    13527,
+    91
+   ],
+   "gen": " soul|",
+   "audio_s": 11.84
+  },
+  {
+   "ids": [
+    13527,
+    91
+   ],
+   "gen": " soul|",
+   "audio_s": 12.0
+  },
+  {
+   "ids": [
+    13527,
+    773,
+    91
+   ],
+   "gen": " soul so|",
+   "audio_s": 12.16
+  },
+  {
+   "ids": [
+    773,
+    91
+   ],
+   "gen": " so|",
+   "audio_s": 12.32
+  },
+  {
+   "ids": [
+    773,
+    91
+   ],
+   "gen": " so|",
+   "audio_s": 12.48
+  },
+  {
+   "ids": [
+    773,
+    15148,
+    91
+   ],
+   "gen": " so closely|",
+   "audio_s": 12.64
+  },
+  {
+   "ids": [
+    15148,
+    91
+   ],
+   "gen": " closely|",
+   "audio_s": 12.8
+  },
+  {
+   "ids": [
+    15148,
+    91
+   ],
+   "gen": " closely|",
+   "audio_s": 12.96
+  },
+  {
+   "ids": [
+    15148,
+    6761
+   ],
+   "gen": " closely depend",
+   "audio_s": 13.12
+  },
+  {
+   "ids": [
+    6761
+   ],
+   "gen": " depend",
+   "audio_s": 13.28
+  },
+  {
+   "ids": [
+    6761,
+    13
+   ],
+   "gen": " depend.",
+   "audio_s": 13.44
+  },
+  {
+   "ids": [
+    13
+   ],
+   "gen": ".",
+   "audio_s": 13.6
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "audio_s": 13.76
+  },
+  {
+   "ids": [
+    13,
+    91
+   ],
+   "gen": ".|",
+   "audio_s": 13.92
+  },
+  {
+   "ids": [
+    11,
+    3730,
+    91
+   ],
+   "gen": ", doing|",
+   "audio_s": 14.08
+  },
+  {
+   "ids": [
+    3730,
+    91
+   ],
+   "gen": " doing|",
+   "audio_s": 14.24
+  },
+  {
+   "ids": [
+    3730,
+    91
+   ],
+   "gen": " doing|",
+   "audio_s": 14.4
+  },
+  {
+   "ids": [
+    3730,
+    8365
+   ],
+   "gen": " doing perhaps",
+   "audio_s": 14.56
+  },
+  {
+   "ids": [
+    8365
+   ],
+   "gen": " perhaps",
+   "audio_s": 14.72
+  },
+  {
+   "ids": [
+    8365
+   ],
+   "gen": " perhaps",
+   "audio_s": 14.88
+  },
+  {
+   "ids": [
+    8365
+   ],
+   "gen": " perhaps",
+   "audio_s": 15.04
+  },
+  {
+   "ids": [
+    8365,
+    91
+   ],
+   "gen": " perhaps|",
+   "audio_s": 15.2
+  },
+  {
+   "ids": [
+    8365,
+    91
+   ],
+   "gen": " perhaps|",
+   "audio_s": 15.36
+  },
+  {
+   "ids": [
+    8365,
+    458,
+    91
+   ],
+   "gen": " perhaps an|",
+   "audio_s": 15.52
+  },
+  {
+   "ids": [
+    458,
+    91
+   ],
+   "gen": " an|",
+   "audio_s": 15.68
+  },
+  {
+   "ids": [
+    458,
+    24870
+   ],
+   "gen": " an irre",
+   "audio_s": 15.84
+  },
+  {
+   "ids": [
+    24870,
+    49156
+   ],
+   "gen": " irreparable",
+   "audio_s": 16.0
+  },
+  {
+   "ids": [
+    49156,
+    91
+   ],
+   "gen": "parable|",
+   "audio_s": 8.16
+  },
+  {
+   "ids": [
+    49156,
+    91
+   ],
+   "gen": "parable|",
+   "audio_s": 8.32
+  },
+  {
+   "ids": [
+    49156,
+    91
+   ],
+   "gen": "parable|",
+   "audio_s": 8.48
+  },
+  {
+   "ids": [
+    49156,
+    91
+   ],
+   "gen": "parable|",
+   "audio_s": 8.64
+  },
+  {
+   "ids": [
+    49156,
+    10895
+   ],
+   "gen": "parable injury",
+   "audio_s": 8.8
+  },
+  {
+   "ids": [
+    10895
+   ],
+   "gen": " injury",
+   "audio_s": 8.88
+  }
+ ],
+ "source": "python-mlx fp32 CPU (r2t2_session.py) — NOT the PyTorch oracle; see PORTING-SPEC 'Cross-library near-ties'",
+ "chunks": []
+}

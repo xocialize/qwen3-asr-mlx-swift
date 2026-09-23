@@ -1,0 +1,693 @@
+{
+ "wav": "audio.wav",
+ "language": "Chinese",
+ "context": "",
+ "text": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明。",
+ "detected_language": "Chinese",
+ "steps": [
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.32,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.48,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.64,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [],
+   "gen": "",
+   "prefix": "",
+   "audio_s": 0.8,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    91
+   ],
+   "gen": "|",
+   "prefix": "",
+   "audio_s": 0.96,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    91
+   ],
+   "gen": "|",
+   "prefix": "",
+   "audio_s": 1.12,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    105142
+   ],
+   "gen": "特朗普",
+   "prefix": "",
+   "audio_s": 1.28,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    105142,
+    91
+   ],
+   "gen": "特朗普|",
+   "prefix": "",
+   "audio_s": 1.44,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    105142,
+    57218,
+    91
+   ],
+   "gen": "特朗普与|",
+   "prefix": "",
+   "audio_s": 1.6,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    57218,
+    91
+   ],
+   "gen": "与|",
+   "prefix": "特朗普",
+   "audio_s": 1.76,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    57218,
+    91
+   ],
+   "gen": "与|",
+   "prefix": "特朗普",
+   "audio_s": 1.92,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    57218,
+    109236,
+    91
+   ],
+   "gen": "与土耳其|",
+   "prefix": "特朗普",
+   "audio_s": 2.08,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    109236,
+    91
+   ],
+   "gen": "土耳其|",
+   "prefix": "特朗普与",
+   "audio_s": 2.24,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    109236,
+    91
+   ],
+   "gen": "土耳其|",
+   "prefix": "特朗普与",
+   "audio_s": 2.4,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    109236,
+    91
+   ],
+   "gen": "土耳其|",
+   "prefix": "特朗普与",
+   "audio_s": 2.56,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    109236,
+    102465
+   ],
+   "gen": "土耳其总统",
+   "prefix": "特朗普与",
+   "audio_s": 2.72,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    102465,
+    91
+   ],
+   "gen": "总统|",
+   "prefix": "特朗普与土耳其",
+   "audio_s": 2.88,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    102465,
+    91
+   ],
+   "gen": "总统|",
+   "prefix": "特朗普与土耳其",
+   "audio_s": 3.04,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    102465,
+    96465
+   ],
+   "gen": "总统雷",
+   "prefix": "特朗普与土耳其",
+   "audio_s": 3.2,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    96465,
+    91
+   ],
+   "gen": "雷|",
+   "prefix": "特朗普与土耳其总统",
+   "audio_s": 3.36,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    96465,
+    91
+   ],
+   "gen": "雷|",
+   "prefix": "特朗普与土耳其总统",
+   "audio_s": 3.52,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    96465,
+    102028,
+    91
+   ],
+   "gen": "雷杰|",
+   "prefix": "特朗普与土耳其总统",
+   "audio_s": 3.68,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    102028,
+    99537
+   ],
+   "gen": "杰普",
+   "prefix": "特朗普与土耳其总统雷",
+   "audio_s": 3.84,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    91
+   ],
+   "gen": "普|",
+   "prefix": "特朗普与土耳其总统雷杰",
+   "audio_s": 4.0,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    91
+   ],
+   "gen": "普|",
+   "prefix": "特朗普与土耳其总统雷杰",
+   "audio_s": 4.16,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    91
+   ],
+   "gen": "普|",
+   "prefix": "特朗普与土耳其总统雷杰",
+   "audio_s": 4.32,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    13935,
+    101105,
+    91
+   ],
+   "gen": "普·塔|",
+   "prefix": "特朗普与土耳其总统雷杰",
+   "audio_s": 4.48,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    101105,
+    100208
+   ],
+   "gen": "塔伊",
+   "prefix": "特朗普与土耳其总统雷杰普·",
+   "audio_s": 4.64,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    100208,
+    99537
+   ],
+   "gen": "伊普",
+   "prefix": "特朗普与土耳其总统雷杰普·塔",
+   "audio_s": 4.8,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    91
+   ],
+   "gen": "普|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊",
+   "audio_s": 4.96,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    91
+   ],
+   "gen": "普|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊",
+   "audio_s": 5.12,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    99537,
+    13935,
+    116490,
+    91
+   ],
+   "gen": "普·埃尔|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊",
+   "audio_s": 5.28,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    116490,
+    91
+   ],
+   "gen": "埃尔|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·",
+   "audio_s": 5.44,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    116490,
+    42140
+   ],
+   "gen": "埃尔多",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·",
+   "audio_s": 5.6,
+   "max_new_tokens": 2
+  },
+  {
+   "ids": [
+    42140,
+    91
+   ],
+   "gen": "多|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔",
+   "audio_s": 5.76,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    42140,
+    50285,
+    91
+   ],
+   "gen": "多安|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔",
+   "audio_s": 5.92,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    50285,
+    91
+   ],
+   "gen": "安|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多",
+   "audio_s": 6.08,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    50285,
+    91
+   ],
+   "gen": "安|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多",
+   "audio_s": 6.24,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    50285,
+    114527,
+    91
+   ],
+   "gen": "安通话|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多",
+   "audio_s": 6.4,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    114527,
+    33447,
+    91
+   ],
+   "gen": "通话后|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安",
+   "audio_s": 6.56,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    33447,
+    91
+   ],
+   "gen": "后|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话",
+   "audio_s": 6.72,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    33447,
+    3837,
+    91
+   ],
+   "gen": "后，|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话",
+   "audio_s": 6.88,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    112823,
+    91
+   ],
+   "gen": "发表了|",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后",
+   "audio_s": 7.04,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    112823,
+    82641,
+    1773
+   ],
+   "gen": "发表了声明。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后",
+   "audio_s": 7.2,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明",
+   "audio_s": 7.36,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明",
+   "audio_s": 7.52,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明",
+   "audio_s": 7.68,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明",
+   "audio_s": 7.84,
+   "max_new_tokens": 4
+  },
+  {
+   "ids": [
+    1773
+   ],
+   "gen": "。",
+   "prefix": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后发表了声明",
+   "audio_s": 7.98,
+   "max_new_tokens": 4
+  }
+ ],
+ "chunks": [
+  {
+   "audio_end_s": 0.32,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.48,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.64,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.8,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 0.96,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.12,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.28,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.44,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.6,
+   "delta": "特朗普"
+  },
+  {
+   "audio_end_s": 1.76,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 1.92,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.08,
+   "delta": "与"
+  },
+  {
+   "audio_end_s": 2.24,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.4,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.56,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 2.72,
+   "delta": "土耳其"
+  },
+  {
+   "audio_end_s": 2.88,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.04,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.2,
+   "delta": "总统"
+  },
+  {
+   "audio_end_s": 3.36,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.52,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 3.68,
+   "delta": "雷"
+  },
+  {
+   "audio_end_s": 3.84,
+   "delta": "杰"
+  },
+  {
+   "audio_end_s": 4.0,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.16,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.32,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 4.48,
+   "delta": "普·"
+  },
+  {
+   "audio_end_s": 4.64,
+   "delta": "塔"
+  },
+  {
+   "audio_end_s": 4.8,
+   "delta": "伊"
+  },
+  {
+   "audio_end_s": 4.96,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.12,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.28,
+   "delta": "普·"
+  },
+  {
+   "audio_end_s": 5.44,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.6,
+   "delta": "埃尔"
+  },
+  {
+   "audio_end_s": 5.76,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 5.92,
+   "delta": "多"
+  },
+  {
+   "audio_end_s": 6.08,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.24,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.4,
+   "delta": "安"
+  },
+  {
+   "audio_end_s": 6.56,
+   "delta": "通话"
+  },
+  {
+   "audio_end_s": 6.72,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 6.88,
+   "delta": "后"
+  },
+  {
+   "audio_end_s": 7.04,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.2,
+   "delta": "发表了声明"
+  },
+  {
+   "audio_end_s": 7.36,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.52,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.68,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.84,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.98,
+   "delta": ""
+  },
+  {
+   "audio_end_s": 7.98,
+   "delta": "。"
+  }
+ ]
+}
