@@ -11,7 +11,7 @@ struct Gates: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "qwen3asr-gates",
         abstract: "Parity gates + a transcribe lane for the Qwen3-ASR / Confucius4-R2T2 Swift port.",
-        subcommands: [G0.self, G1.self, G2.self, G3.self, G4.self, Transcribe.self, Stream.self])
+        subcommands: [G0.self, G1.self, G2.self, G3.self, G4.self, Transcribe.self, Stream.self, Creep.self])
 }
 
 struct Common: ParsableArguments {

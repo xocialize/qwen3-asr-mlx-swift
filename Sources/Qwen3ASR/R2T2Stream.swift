@@ -122,6 +122,13 @@ public final class R2T2Stream {
     // MARK: - Input
 
     /// Feeds audio; returns the committed deltas produced by every full chunk it completed.
+    ///
+    /// Each step runs inside its own autorelease pool. A step hands Foundation and Metal
+    /// AUTORELEASED objects: the tokenizer's NSRegularExpression pre-tokenizer (match results,
+    /// NSValue ranges) and MLX's Metal command buffers, with the completion handlers they hold. A
+    /// host's loop may never drain a pool of its own — a Swift-concurrency job, a CLI's `run()` — so
+    /// without this a session kept every step's objects: phys grew ~0.07 GB per 10 minutes of audio,
+    /// 6.18 → 6.47 GB over 45 min (ML[X] Audio Studio M14-C item 2; `qwen3asr-gates creep`).
     public func push(_ samples: [Float]) -> [String] {
         buffer.append(contentsOf: samples)
         var deltas: [String] = []
@@ -131,7 +138,8 @@ public final class R2T2Stream {
             let chunk = Array(buffer[0 ..< need])
             buffer.removeFirst(need)
             isFirstChunk = false
-            if let d = step(chunk: chunk, budget: Int(maxNewTokens), final: false), !d.isEmpty { deltas.append(d) }
+            let d = autoreleasepool { step(chunk: chunk, budget: Int(maxNewTokens), final: false) }
+            if let d, !d.isEmpty { deltas.append(d) }
         }
         return deltas
     }
@@ -141,7 +149,7 @@ public final class R2T2Stream {
         guard !buffer.isEmpty else { return "" }
         let tail = buffer
         buffer.removeAll()
-        return step(chunk: tail, budget: firstMaxNewTokens, final: true) ?? ""
+        return autoreleasepool { step(chunk: tail, budget: firstMaxNewTokens, final: true) } ?? ""
     }
 
     // MARK: - One step (streaming_transcribe_no_reset / finish_streaming_transcribe_no_reset)

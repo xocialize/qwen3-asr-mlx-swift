@@ -68,13 +68,17 @@ swift run -c release qwen3asr-gates g2 --model $M --golden Tools/goldens/zh_test
 swift run -c release qwen3asr-gates g3 --model $M --golden Tools/goldens/zh_test   # LM logits
 swift run -c release qwen3asr-gates g4 --model $M --golden Tools/goldens/ls_long   # the loop, token-exact
 swift run -c release qwen3asr-gates stream --model $M --wav clip.wav --gpu --language English
+swift run -c release qwen3asr-gates creep --model $M8 --wav long.wav --language English  # memory vs session length
 ```
 
 The goldens and the clips they were captured from ship in `Tools/goldens/` (clip licences in
 `Tools/goldens/FIXTURES.md`), so a clean clone runs every gate; only the weights are fetched. Goldens
 come from `Tools/capture_goldens.py` — the Python-MLX rung on the fp32 CPU stream. Gates run on the
 fp32 CPU stream by default; `--gpu` runs the stored dtype on Metal. `g4` on `ls_long` takes about
-7.5 min in release (both strategies).
+7.5 min in release (both strategies). `creep` is a diagnostic, not a gate: it streams a long file on
+Metal in the stored dtype (use the 8-bit tier, `$M8`) with MLX's pool capped as MLXEngine caps it, and
+every minute of audio prints phys_footprint beside MLX's live arrays, its pool, and the malloc heap.
+In a bounded-window loop, all four should stay flat.
 
 ## Lineage
 
