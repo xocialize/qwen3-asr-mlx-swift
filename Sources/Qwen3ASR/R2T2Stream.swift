@@ -169,9 +169,10 @@ public final class R2T2Stream {
             let fs = txt.trimmingCharacters(in: .whitespacesAndNewlines)
             let newText = String(fs.dropFirst(min(ps.count, fs.count)))
             chunkText.append(newText)
-            committedText += newText
+            let emitted = R2T2Text.joining(newText, after: committedText, restarted: ps.isEmpty)
+            committedText += emitted
             record(t0: t0, ids: ids, gen: gen, delta: newText, budget: budget, promptTokens: promptTokens, reused: reused)
-            return newText
+            return emitted
         }
         rawDecoded = prefix + gen
         var lang: String? = nil
@@ -203,15 +204,18 @@ public final class R2T2Stream {
         let fs = fixed.trimmingCharacters(in: .whitespacesAndNewlines)
         var newText = fs.hasPrefix(ps) ? String(fs.dropFirst(ps.count)) : ""
         newText = R2T2Text.beforePipe(newText)
+        // The prompt keeps the model's own text exactly as upstream; only what is EMITTED gains a
+        // separator when the loop restarted from an empty prefix (see `R2T2Text.joining`).
         chunkText.append(newText)
-        committedText += newText
+        let emitted = R2T2Text.joining(newText, after: committedText, restarted: ps.isEmpty)
+        committedText += emitted
         record(t0: t0, ids: ids, gen: generated, delta: newText, budget: budget, promptTokens: promptTokens, reused: reused)
         schedule(grew: !newText.isEmpty, delta: newText)
         if options.hallucinationGuard, R2T2Text.detectHallucination(committedText).0 {
             hallucinationResets += 1
             resetContext()
         }
-        return newText
+        return emitted
     }
 
     private func record(t0: Date, ids: [Int], gen: String, delta: String, budget: Int, promptTokens: Int, reused: Int) {
@@ -396,6 +400,36 @@ public enum R2T2Text {
             else if p.isASCII && (p.isLetter || p.isNumber) { out[i] = zh2en[c] ?? c }
         }
         return String(out)
+    }
+
+    /// The committed piece to EMIT, given what was emitted before it.
+    ///
+    /// When the loop restarts from an empty prefix, the model begins a fresh transcript whose first
+    /// token carries no leading space. That happens after a pause longer than the rolling window,
+    /// whose drop leaves no committed text in the prompt, and after a hallucination reset. Upstream
+    /// concatenates anyway, so English after a 20 s pause reads "the lakesOn August" (the Python
+    /// rung does the same). A separator goes in only on a restart, only between space-delimited
+    /// scripts, and never before closing punctuation. Mid-stream deltas are subword continuations
+    /// ("glean" + "er") and are never touched. Found by ML[X] Audio Studio M14-C item 6 (0.1.2).
+    public static func joining(_ piece: String, after emitted: String, restarted: Bool) -> String {
+        guard restarted, let left = emitted.last, let right = piece.first,
+              !left.isWhitespace, !right.isWhitespace,
+              !",.!?;:)]}\u{3001}\u{3002}".contains(right),
+              !isUnspacedScript(left), !isUnspacedScript(right) else { return piece }
+        return " " + piece
+    }
+
+    /// Scripts written without spaces between words: Han, kana, Thai, and CJK punctuation or
+    /// full-width forms. Korean (Hangul) is space-delimited, so it is not in the list.
+    public static func isUnspacedScript(_ c: Character) -> Bool {
+        guard let v = c.unicodeScalars.first?.value else { return false }
+        switch v {
+        case 0x3400...0x4DBF, 0x4E00...0x9FFF, 0xF900...0xFAFF, 0x20000...0x2FA1F: return true   // Han
+        case 0x3040...0x30FF, 0x31F0...0x31FF: return true                                    // kana
+        case 0x0E00...0x0E7F: return true                                                     // Thai
+        case 0x3000...0x303F, 0xFF00...0xFFEF: return true                                    // CJK punctuation, full-width
+        default: return false
+        }
     }
 
     public static func beforePipe(_ s: String) -> String {
