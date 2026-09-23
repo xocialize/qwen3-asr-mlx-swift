@@ -36,14 +36,37 @@ public final class Qwen3ASRModel: Module {
     }
 
     /// Canonical language name (`"chinese"` → `"Chinese"`, `"en"` → `"English"`), validated against
-    /// `support_languages` when the checkpoint lists them.
+    /// `support_languages` when the checkpoint lists them. See `canonicalLanguageName(_:supported:)`.
     public func canonicalLanguage(_ language: String?) -> String? {
         guard let raw = language?.trimmingCharacters(in: .whitespacesAndNewlines), !raw.isEmpty else { return nil }
-        let name = qwen3ASRLanguageAliases[raw.lowercased()] ?? (raw.prefix(1).uppercased() + raw.dropFirst().lowercased())
-        if !config.supportLanguages.isEmpty, let hit = config.supportLanguages.first(where: { $0.lowercased() == name.lowercased() }) {
-            return hit
+        return Self.canonicalLanguageName(raw, supported: config.supportLanguages)
+    }
+
+    /// The name the prompt's `language X<asr_text>` header needs, from whatever a host holds: a
+    /// name (`"English"`), an alias (`"mandarin"`), an ISO 639 code (`"zh"`, `"fil"`) or a BCP-47
+    /// locale (`"en-US"`, `"zh-Hans-CN"`, `"yue-HK"` — its primary subtag names the language).
+    ///
+    /// A language the checkpoint does not list returns **nil**, which means auto-detect. Before
+    /// 0.1.1 it came back capitalised (`"en-US"` → `"En-us"`) and went into the prompt as a
+    /// language the model has never seen. ⚠️ Forcing a language matters for latency as well as
+    /// accuracy. Under auto-detect the stable prefix begins `language None<asr_text>`, and nothing
+    /// commits until the header settles. On the 6.7 s Mandarin sample that is 5.9 s, against
+    /// 1.9 s with `"Chinese"` forced (goldens `zh_test_auto` vs `zh_test`).
+    public static func canonicalLanguageName(_ raw: String, supported: [String]) -> String? {
+        let key = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        guard !key.isEmpty else { return nil }
+        let primary = key.split(whereSeparator: { $0 == "-" || $0 == "_" }).first.map(String.init) ?? key
+        let candidates = [
+            qwen3ASRLanguageAliases[key],
+            qwen3ASRLanguageAliases[primary],
+            Locale(identifier: "en_US").localizedString(forLanguageCode: primary),   // ISO 639 → English name
+            key.prefix(1).uppercased() + key.dropFirst(),
+        ].compactMap { $0 }
+        guard !supported.isEmpty else { return candidates.first }
+        for candidate in candidates {
+            if let hit = supported.first(where: { $0.lowercased() == candidate.lowercased() }) { return hit }
         }
-        return name
+        return nil
     }
 
     /// Token ids for `template` with the placeholder expanded to `audioTokens` pads.

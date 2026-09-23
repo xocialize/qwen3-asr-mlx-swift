@@ -46,6 +46,12 @@ for chunk in microphoneChunks { for delta in stream.push(chunk) { print(delta, t
 print(stream.finish())
 ```
 
+`language` takes a name (`"English"`), an ISO code (`"zh"`) or a BCP-47 locale (`"zh-Hans-CN"`), and a
+language the checkpoint does not list falls back to auto-detect (nil). **Pass one when you know it.**
+Under auto-detect the stable prefix starts `language None<asr_text>…`, and nothing commits until the
+model names the language. On the 6.7 s Mandarin sample that is 5.9 s, against 1.9 s with `"Chinese"`
+forced; English usually settles at once.
+
 `R2T2Stream.Options` exposes the reference knobs (`chunkSeconds` 0.16, `lookaheadSeconds` 0.16,
 `unfixedTokens` 1, the 16 s / 8 s rolling window, the `.server` / `.example` token schedule) and the
 decode `strategy`: `.reencode` re-feeds the window every chunk like the vLLM reference; `.reuse`
