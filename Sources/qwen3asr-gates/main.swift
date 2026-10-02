@@ -18,8 +18,15 @@ struct Common: ParsableArguments {
     @Option(help: "Model directory (config.json + tokenizer.json + *.safetensors).") var model: String
     @Flag(help: "Run on the GPU in the stored dtype instead of fp32 on the CPU stream.") var gpu = false
 
+    /// Pins the CPU stream unless --gpu. Must run before ANY MLX work in the process (golden loads
+    /// included): Device.setDefault is a no-op once MLX has been touched, and `Device.cpu` (the
+    /// static) itself touches it — hence `Device(.cpu)`.
+    func pinDevice() {
+        if !gpu { MLX.Device.setDefault(device: Device(.cpu)) }
+    }
+
     func load() async throws -> Qwen3ASRModel {
-        if !gpu { MLX.Device.setDefault(device: Device.cpu) }
+        pinDevice()
         let t0 = Date()
         let m = try Qwen3ASRModel.load(directory: URL(fileURLWithPath: model), dtype: gpu ? nil : .float32)
         try await m.loadTokenizer(directory: URL(fileURLWithPath: model))
@@ -65,6 +72,7 @@ struct G0: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "G0 — config, special ids, tokenizer, token-count contract.")
     @OptionGroup var common: Common
     func run() async throws {
+        common.pinDevice()
         print("# G0 — key contract\n")
         let m = try await common.load()
         var ok = true
@@ -96,6 +104,7 @@ struct G1: AsyncParsableCommand {
     @OptionGroup var common: Common
     @Option var golden: String
     func run() async throws {
+        common.pinDevice()
         print("# G1 — mel front-end\n")
         let g = try Golden(golden)
         let m = try await common.load()
@@ -120,6 +129,7 @@ struct G2: AsyncParsableCommand {
     @Option var golden: String
     @Option(help: "Tolerance on max_abs (fp32 rounding across two MLX bindings; 0 = bit-exact).") var tol: Float = 1e-3
     func run() async throws {
+        common.pinDevice()
         print("# G2 — encoder\n")
         let g = try Golden(golden)
         let m = try await common.load()
@@ -157,6 +167,7 @@ struct G3: AsyncParsableCommand {
     @Option var golden: String
     @Option var tol: Float = 5e-3
     func run() async throws {
+        common.pinDevice()
         print("# G3 — language model\n")
         let g = try Golden(golden)
         let m = try await common.load()
@@ -186,6 +197,7 @@ struct Transcribe: AsyncParsableCommand {
     @Option var language: String?
     @Option var context: String = ""
     func run() async throws {
+        common.pinDevice()
         let m = try await common.load()
         let samples = try WAV.load(wav)
         let t0 = Date()
