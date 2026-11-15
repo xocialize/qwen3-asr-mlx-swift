@@ -17,17 +17,31 @@ streaming loop, with no MLXEngine dependency. The MLXEngine `stt` package that w
   load through the same code for one-shot transcription (they are not trained for the streaming loop).
 - **Parity:** token-exact vs the Python-MLX rung on the fp32 CPU stream (G0–G4 in `PORTING-SPEC.md`);
   the Python rung itself is token-exact vs the PyTorch reference loop.
+- **Forced aligner (0.2.0):** [`Qwen/Qwen3-ForcedAligner-0.6B`](https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B)
+  (Apache-2.0; MLX tiers `mlx-community/Qwen3-ForcedAligner-0.6B-{bf16,8bit}`): word timestamps for audio whose
+  text is known, in one forward — about 20 ms per 5 s sentence on an M5 Max. Identical to mlx-audio's Python
+  implementation on the gate clips (prompt ids, timestamp classes, word times).
 - **Licences:** port code MIT; weights by their publishers (see `NOTICE`).
 
 ## Install
 
 ```swift
-.package(url: "https://github.com/xocialize/qwen3-asr-mlx-swift.git", from: "0.1.0"),
+.package(url: "https://github.com/xocialize/qwen3-asr-mlx-swift.git", from: "0.2.0"),
 // …
 .product(name: "Qwen3ASR", package: "qwen3-asr-mlx-swift"),
 ```
 
 ## Quick start
+
+Forced alignment (e.g. TTS output, one sentence chunk at a time):
+
+```swift
+let aligner = try Qwen3ForcedAligner.load(directory: alignerDir)  // config.json + *.safetensors + vocab.json + merges.txt
+let words = try aligner.align(samples: chunkPCM, sampleRate: 44_100, text: chunkText)  // [AlignedWord(text, start, end)]
+// times are seconds from the chunk's first sample: add the chunk's start in the stream
+```
+
+Transcription:
 
 ```swift
 import Qwen3ASR

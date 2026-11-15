@@ -98,3 +98,22 @@ Stamps are written AFTER each run, from tool output.
 | **KIT** offline conformance | `swift test` | manifest / CAN / MAT / weight-sourcing suites | **PASSED 2026-09-22 — 21/21** (10 manifest incl. the licence-layer and discipline declarations, 3 cancellation, 5 materialization, 3 weight sourcing) **Re-run 2026-09-23 (v0.1.0): 23/23** at engine 0.62.0 — adds `testFootprintCoversTheMeasuredPhysLine`, which fails if the declaration ever drops below the measured [VAL] line. |
 | **LIC** licence plane | `swift test --filter ManifestTests` | the weight licence is engine-allowlisted, so `.permissiveOnly` admits with **no** `LicenseAdvisory` | **PASSED 2026-09-22** — `SPDXLicense.neteaseYoudaoModelUse` shipped in `mlx-engine-swift` **v0.57.0** (AB-A-0087; contract 1.42.0 unchanged). mlx-engine re-diffed the NetEase and bilibili agreement texts independently rather than taking AB-L-0140 on trust: **all of §3/§4/§5 byte-identical**, deltas confined to the title, §1.1–1.2/§1.4 names, §3.4(c)'s model name, the inserted §2.3 contact block and §6.2's venue (AB-R-0273). Consumer adopted the same day: package-local constant deleted, manifest on `.neteaseYoudaoModelUse`, engine floor 0.57.0, **22/22** incl. `testAdmitsUnderTheDefaultPermissiveOnlyPolicyWithNoAdvisory` |
 | **VAL** footprint | `r2t2-gates val` | phys_footprint floor / activation vs the declaration (AB-L-0113) | **FAILED 2026-09-22** — int8 floor 2.69–2.70 GB vs 2.40 declared; activation **2.64 → 3.17 → 3.25 GB** at 6.7 / 163 / 182 s vs 1.50 declared; bf16 4.31 / 3.28 vs 4.20 / 1.50. Declared from the Python rung's allocator peak — the error AB-L-0113 names. Fix = ML[X] Audio Studio `Docs/R2T2-PLAN.md` M14-A (declare from phys, rounded up), then the plateau check (M14-C item 2) **PASSED 2026-09-23 (v0.1.0) at the corrected declaration — int8 2.80 GB resident + 3.60 GB activation, bf16 4.40 + 3.60.** Quiet box, sequential: int8 floor 2.69 / 2.70 / 2.70 GB, activation **2.62 / 3.10 / 3.10 GB** at 6.7 / 163 / 182 s (a plateau from 163 s on); bf16 floor 4.31, activation 3.24 GB at 182 s. Highest reading on any run, including runs taken under load (which read 0.1–0.4 GB low or high — AB-L-0118): 3.28 GB, so 3.60 leaves ~10 %. What the activation is (`r2t2-gates mem`, AB-L-0155): the model's own MLX working set is ~1.1 GB above the weights and flat in clip length; the rest is the engine's recycling pool at its 2 GiB automatic cap (every chunk re-prefills a new-length prompt); ~2 GB stays mapped in the Metal heap after `clearCache` (AB-L-0081), with MLX active back at the weights exactly — no leak. With pooling off, phys activation is ~0.06 GB but runs are ~50 % slower; the pool is engine policy, so the declaration is pool-inclusive. |
+
+
+## Forced aligner (0.2.0, AB-A-0288)
+
+`Qwen3ForcedAligner`: the AuT encoder and Qwen3 decoder of this core with a `classify_num` (5000) timestamp head; the
+prompt is `<|audio_start|>` + pads + `<|audio_end|>` + word `<timestamp><timestamp>` …, one causal forward, argmax at
+the `<timestamp>` rows × 80 ms, then the longest-non-decreasing repair. Oracle: mlx-audio's Python implementation
+(`Tools/aligner_goldens.py`, bf16 on the GPU). The checkpoints ship `vocab.json` + `merges.txt` but no
+`tokenizer.json`, so the word segments go through `Qwen2WordTokenizer` (NFC, the Qwen2 pre-tokenizer regex, byte-level
+BPE); special ids are inserted directly, as the HF tokenizer splits on them.
+
+| gate | result |
+|---|---|
+| `qwen3asr-gates align --gpu` (bf16), 3 clips | word lists, prompt ids, 84/84 timestamp classes and every word time identical; 16–23 ms per clip warm |
+| same, 8-bit repo vs the bf16 goldens | 84/84 classes identical; 16–21 ms |
+| `align-score` on 30 mlx-zonos3-tts-swift takes (3.9–5.7 s each) | per-chunk latency median 20.3 ms (8-bit) / 21.8 ms (bf16), p90 21.6 / 23.2 ms |
+
+Not ported: Japanese (nagisa) and Korean (soynlp) word segmentation. Those texts are split on whitespace and CJK
+ideographs only.
